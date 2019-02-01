@@ -1,0 +1,27 @@
+<html>
+<style>
+</style>
+<body style = "background: url(https://cdn-images-1.medium.com/max/800/0*jdeMyO7-xpbvvi4b.jpg);background-size: 100% 100%;">
+<center>
+  <font color="red" size="">
+  <h1>Your Text:</h1>
+    {{ fulltext }}
+  <h1>There are {{ count }} words in your text</h1>
+
+  <a href="{% url 'home' %}"><b>START AGAIN</b></a>
+
+  <h1>Word Count:</h1>
+
+  {% for word, counttotal in sortedwords %}
+  <b>
+  {{ word }} - {{ counttotal }}
+  </b>
+  <br />
+
+
+  {% endfor %}
+
+</font>
+</center>
+</body>
+</html>

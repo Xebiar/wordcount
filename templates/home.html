@@ -1,0 +1,16 @@
+<html>
+<style>
+</style>
+<body style = "background: url(https://cdn-images-1.medium.com/max/800/0*jdeMyO7-xpbvvi4b.jpg);background-size: 100% 100%;">
+<center>
+  <font color="red">
+  <h1>Word Count</h1>
+  <form action="{% url 'count' %}">
+      <textarea name="fulltext" rows="5" cols="40"></textarea>
+      <br />
+      <input type="submit"  value="Count!" />
+  </form>
+  </font>
+</center>
+</body>
+</html>
